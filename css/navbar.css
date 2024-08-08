@@ -1,0 +1,166 @@
+
+.header-content {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #27303b;
+  border-bottom: 2px solid #fff;
+}
+
+.header-content-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: #27303b;
+}
+
+.logo {
+  height: auto;
+  background-color: white;
+  max-height: 60px; 
+  width: 200px;  
+  padding: 2px;
+  margin: 10px;
+}
+
+
+.navbar-large {
+  display: flex;
+  padding: 5px;
+  margin-right: 50px;
+}
+
+.navbar-small {
+  display: none;
+}
+
+.title{
+  color: white;
+  margin: 10px;
+}
+
+.icon{
+  color: white;
+}
+
+.title-mobile{
+  color: white;
+  margin: 10px;
+}
+
+.nav-links {
+  
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 2px;
+}
+
+.link {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.hamburger{
+  color: white;
+  display: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 2rem;
+  color: #fff;
+}
+@media (max-width: 960px) {
+  .link-mobile {
+    display: flex;
+    margin: 7px;
+
+    color: white;
+
+  }
+
+  .navbar-small {
+      /* Initially hidden */
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, max-height 0.3s ease;
+  }
+
+  .navbar-small.show {
+      /* Visible state */
+      max-height: 500px; /* Adjust as needed */
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .hamburger{
+      display: flex;
+  }
+
+  .content-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .navbar-small {
+    display: flex;
+  }
+
+  .navbar-large {
+    display: none;
+  }
+
+  .header-content {
+    display: none;
+  }
+
+  .header-content-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 960px) {
+  .navbar-large {
+    display: flex;
+  }
+
+  .navbar-small {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+  }
+
+  .header-content-mobile {
+    display: none;
+  }
+}
