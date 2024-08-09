@@ -100,6 +100,7 @@
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s ease, max-height 0.3s ease;
+      transition: all 0.3s ease-in-out;
   }
 
   .navbar-small.show {
@@ -107,6 +108,7 @@
       max-height: 500px; /* Adjust as needed */
       opacity: 1;
       visibility: visible;
+      display: block;
   }
 
   .nav-links-mobile {
@@ -164,3 +166,4 @@
     display: none;
   }
 }
+
